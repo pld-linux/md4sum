@@ -1,5 +1,5 @@
 Summary:	Generate or check MD4 message digests
-Summary(pl):	Generuje lub sprawdza skróty MD4
+Summary(pl):	Generowanie i sprawdzanie skrótów MD4
 Name:		md4sum
 Version:	0.02.01
 Release:	1
@@ -17,7 +17,7 @@ digests. It can be used also for ed2k links.
 
 %description -l pl
 md4sum jest to ma³e narzêdzie s³u¿±ce do generowania lub sprawdzania 
-skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dznia odno¶nikami ed2k.
+skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dzania odno¶nikami ed2k.
 
 %prep
 %setup -q
@@ -26,7 +26,8 @@ skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dznia odno¶nikami ed2k.
 %build
 ./configure
 %{__make} \
-	CC="%{__cc}" CFLAGS="%{rpmcflags}"
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 %{__make} test
 
 %install
@@ -42,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{_mandir}/man1/*
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
