@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/File
 Source0:	ftp://ibiblio.org/pub/Linux/utils/file/%{name}-%{version}.tar.gz
 # Source0-md5:	f8c060c61231429f0efb7860da1423f6
+Patch0:		%{name}-Makefile.patch
 URL:		http://linux.xulin.de/c/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,10 +21,12 @@ skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dznia odno¶nikami ed2k.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-%configure
-%{__make}
+./configure
+%{__make} \
+	CC="%{__cc}" CFLAGS="%{rpmcflags}"
 %{__make} test
 
 %install

@@ -1,0 +1,14 @@
+diff -Nur o.md4sum-0.02.01/Makefile.Linux n.md4sum-0.02.01/Makefile.Linux
+--- o.md4sum-0.02.01/Makefile.Linux	2002-11-10 02:42:09.000000000 +0100
++++ n.md4sum-0.02.01/Makefile.Linux	2005-10-23 22:05:48.000000000 +0200
+@@ -3,8 +3,8 @@
+ #
+ 
+ CC=gcc
+-CFLAGS=-Wall -Wstrict-prototypes -fomit-frame-pointer -pipe -I$(HDDIR) -DOS_TYPE_Linux -DOS_TYPE_STR=\"Linux\" -Dprg_name=\"$(PRG)\" -DMANUAL_NUMBER=$(MAN_NO)
+-LDFLAGS=-Wl,-warn-common -s -L$(LIBDIR)
++override CFLAGS+=-Wall -Wstrict-prototypes -fomit-frame-pointer -pipe -I$(HDDIR) -DOS_TYPE_Linux -DOS_TYPE_STR=\"Linux\" -Dprg_name=\"$(PRG)\" -DMANUAL_NUMBER=$(MAN_NO)
++override LDFLAGS+=-Wl,-warn-common -L$(LIBDIR)
+ 
+ LDLIBS = 
+ HDDIR = ./
