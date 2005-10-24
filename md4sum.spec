@@ -1,4 +1,3 @@
-
 Summary:	Generate or check MD4 message digests
 Summary(pl):	Generuje lub sprawdza skróty MD4
 Name:		md4sum
@@ -29,11 +28,9 @@ skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dznia odno¶nikami ed2k.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
 
-install -d $RPM_BUILD_ROOT%{_bindir}
 install md4sum $RPM_BUILD_ROOT%{_bindir}
-
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
 install md4sum.1  $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
