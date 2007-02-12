@@ -1,5 +1,5 @@
 Summary:	Generate or check MD4 message digests
-Summary(pl):	Generowanie i sprawdzanie skrótów MD4
+Summary(pl.UTF-8):   Generowanie i sprawdzanie skrÃ³tÃ³w MD4
 Name:		md4sum
 Version:	0.02.01
 Release:	1
@@ -15,9 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 md4sum is a small utility used to generate or check MD4 message 
 digests. It can be used also for ed2k links.
 
-%description -l pl
-md4sum jest to ma³e narzêdzie s³u¿±ce do generowania lub sprawdzania 
-skrótów MD4. Mo¿e tak¿e pos³u¿yæ do zarz±dzania odno¶nikami ed2k.
+%description -l pl.UTF-8
+md4sum jest to maÅ‚e narzÄ™dzie sÅ‚uÅ¼Ä…ce do generowania lub sprawdzania 
+skrÃ³tÃ³w MD4. MoÅ¼e takÅ¼e posÅ‚uÅ¼yÄ‡ do zarzÄ…dzania odnoÅ›nikami ed2k.
 
 %prep
 %setup -q
