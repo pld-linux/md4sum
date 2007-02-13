@@ -1,5 +1,5 @@
 Summary:	Generate or check MD4 message digests
-Summary(pl.UTF-8):   Generowanie i sprawdzanie skrótów MD4
+Summary(pl.UTF-8):	Generowanie i sprawdzanie skrótów MD4
 Name:		md4sum
 Version:	0.02.01
 Release:	1
