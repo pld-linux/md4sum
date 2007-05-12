@@ -1,12 +1,12 @@
 Summary:	Generate or check MD4 message digests
 Summary(pl.UTF-8):	Generowanie i sprawdzanie skrótów MD4
 Name:		md4sum
-Version:	0.02.01
+Version:	0.02.03
 Release:	1
 License:	GPL
 Group:		Applications/File
 Source0:	ftp://ibiblio.org/pub/Linux/utils/file/%{name}-%{version}.tar.gz
-# Source0-md5:	f8c060c61231429f0efb7860da1423f6
+# Source0-md5:	25872c81ea7afa7dc71162964ca24d66
 Patch0:		%{name}-Makefile.patch
 URL:		http://linux.xulin.de/c/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
