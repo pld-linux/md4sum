@@ -21,7 +21,7 @@ skrótów MD4. Może także posłużyć do zarządzania odnośnikami ed2k.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 ./configure
